@@ -17,6 +17,7 @@ Adds the following features:
     - geoip_db  path_to_GeoIP.dat,               -> location of GeoIP.dat provided by maxmind
     - geoip_path path_to_geoip_files             -> path to manifiest (geoip.info) and geoipfiles defined at manifiest
   
+
 - NOTE: to activate geolocalization it must be enabled at configure with "--enable-reputationgeoip" option
 
 
@@ -39,8 +40,8 @@ preprocessor reputation: \
 
 I have added the files: 
 
-1.  /opt/rb/share/GeoIP/GeoIP.dat   -> GeoIP database    (this file is required for geolocalization)
-2.  /opt/rb/etc/snort/geoips/geo.info -> GeoIP manifiest file. This file is required for geolocalization too. I show you an example of content:
+- /opt/rb/share/GeoIP/GeoIP.dat   -> GeoIP database    (this file is required for geolocalization)  
+- /opt/rb/etc/snort/geoips/geo.info -> GeoIP manifiest file. This file is required for geolocalization too. I show you an example of content:
 
     - white.geo, white
     - black.geo, black
@@ -51,13 +52,13 @@ I have added the files:
         filename, [white|monitor|black]
 
 
-3.  GeoIP files. Following the same example as before:
+- GeoIP files. Following the same example as before:
 
-    3.1 /opt/rb/etc/snort/geoips/white.geo
+    - /opt/rb/etc/snort/geoips/white.geo  
         US
 
-    3.2 /opt/rb/etc/snort/geoips/black.geo 
-        NL
+    - /opt/rb/etc/snort/geoips/black.geo  
+        NL  
         FR
 
     NOTE: With this example United States will be white listed and Netherland and France will be black listed
